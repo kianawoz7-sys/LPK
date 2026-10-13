@@ -1,0 +1,1267 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="theme-color" content="#f8f9f7" />
+  <title>LPK J.A.T Banjarnegara</title>
+  <meta name="description"
+    content="Konsep website company profile LPK J.A.T Banjarnegara untuk mempresentasikan program pelatihan bahasa Jepang dan pendampingan karier." />
+  <style>
+    :root {
+      --ink: #152d4a;
+      --navy: #0c3264;
+      --blue: #12529a;
+      --orange: #f06b36;
+      --paper: #f8f9f7;
+      --muted: #5f6f7d;
+      --line: #dce2e8
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Inter, "Helvetica Neue", Arial, sans-serif;
+      -webkit-font-smoothing: antialiased
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none
+    }
+
+    button {
+      font: inherit
+    }
+
+    .container {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 42px
+    }
+
+    .micro {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .17em;
+      text-transform: uppercase
+    }
+
+    .preview-top {
+      background: #e9f0f6;
+      border-bottom: 1px solid #d6e1ec;
+      color: #5b7185
+    }
+
+    .preview-top .container {
+      height: 33px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 10px;
+      letter-spacing: .055em;
+      font-weight: 600
+    }
+
+    .nav {
+      height: 92px;
+      border-bottom: 1px solid #e2e6eb;
+      background: var(--paper)
+    }
+
+    .nav-in {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+      gap: 28px
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 244px
+    }
+
+    .brand-mark {
+      height: 40px;
+      width: 48px;
+      color: var(--orange);
+      font-size: 25px;
+      line-height: 40px;
+      font-weight: 900;
+      letter-spacing: -.12em;
+      font-style: italic;
+      position: relative
+    }
+
+    .brand-mark:after {
+      content: "";
+      position: absolute;
+      left: 3px;
+      right: 0;
+      bottom: 5px;
+      height: 3px;
+      background: var(--orange);
+      transform: skew(-18deg)
+    }
+
+    .brand-title {
+      font-size: 14px;
+      font-weight: 850;
+      letter-spacing: -.025em
+    }
+
+    .brand-sub {
+      margin-top: 3px;
+      font-size: 9px;
+      color: #718191;
+      font-weight: 650;
+      letter-spacing: .055em;
+      text-transform: uppercase
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 35px;
+      font-size: 12px;
+      font-weight: 650;
+      color: #485e70
+    }
+
+    .nav-links a:hover {
+      color: var(--orange)
+    }
+
+    .nav-cta {
+      background: var(--navy);
+      color: white;
+      border-radius: 4px;
+      padding: 15px 21px;
+      font-size: 11px;
+      font-weight: 750;
+      white-space: nowrap
+    }
+
+    .nav-cta:hover,
+    .btn-orange:hover {
+      transform: translateY(-1px)
+    }
+
+    .mobile-panel {
+      display: none
+    }
+
+    .mobile-menu-button {
+      display: none;
+      background: none;
+      border: 0;
+      color: var(--navy);
+      font-size: 22px
+    }
+
+    .hero {
+      overflow: hidden;
+      border-bottom: 1px solid #e1e5e8
+    }
+
+    .hero-in {
+      display: grid;
+      grid-template-columns: 57% 43%;
+      min-height: 650px;
+      align-items: center;
+      position: relative
+    }
+
+    .hero-copy {
+      position: relative;
+      z-index: 2;
+      padding: 44px 0 49px
+    }
+
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      color: var(--blue);
+      margin: 0 0 32px
+    }
+
+    .eyebrow:before {
+      content: "";
+      display: block;
+      width: 34px;
+      height: 2px;
+      background: var(--orange)
+    }
+
+    .hero h1 {
+      font-family: 'Inter Display', Inter, sans-serif;
+      font-size: clamp(58px, 5.5vw, 78px);
+      line-height: 1.015;
+      letter-spacing: -.072em;
+      margin: 0 0 31px;
+      font-weight: 825;
+      max-width: 720px
+    }
+
+    .hero h1 em {
+      color: var(--orange);
+      font-style: normal
+    }
+
+    .hero-desc {
+      max-width: 485px;
+      font-size: 15px;
+      line-height: 1.8;
+      color: var(--muted);
+      margin: 0 0 32px
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 12px;
+      align-items: center
+    }
+
+    .btn-orange,
+    .btn-outline {
+      display: inline-flex;
+      justify-content: center;
+      gap: 25px;
+      align-items: center;
+      font-size: 12px;
+      font-weight: 750;
+      transition: transform .15s ease;
+      border-radius: 3px;
+      min-height: 48px;
+      padding: 0 21px
+    }
+
+    .btn-orange {
+      background: var(--orange);
+      color: #fff
+    }
+
+    .btn-outline {
+      border: 1px solid #bdcbd9;
+      color: var(--ink)
+    }
+
+    .hero-note {
+      margin-top: 52px;
+      color: #8a98a3;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase
+    }
+
+    .hero-art {
+      height: 590px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-left: 27px
+    }
+
+    .hero-art:before {
+      content: "";
+      position: absolute;
+      z-index: 0;
+      width: 94%;
+      height: 78%;
+      right: -84px;
+      top: 55px;
+      background: #e9eef2
+    }
+
+    .photo-outer {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      height: 343px;
+      margin-top: 13px;
+      border: 9px solid #fff;
+      box-shadow: 0 20px 65px rgba(15, 41, 72, .12);
+      background: #dce6ee
+    }
+
+    .photo-outer img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover
+    }
+
+    .photo-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 17px 21px;
+      background: linear-gradient(transparent, rgba(8, 25, 44, .8));
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .11em;
+      color: #fff;
+      text-transform: uppercase
+    }
+
+    .hero-stamp {
+      position: absolute;
+      right: 13px;
+      top: 49px;
+      z-index: 3;
+      background: var(--orange);
+      color: white;
+      padding: 16px 15px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      font-size: 10px;
+      writing-mode: vertical-rl;
+      min-height: 126px
+    }
+
+    .art-index {
+      font-size: 12px;
+      position: absolute;
+      left: 27px;
+      bottom: 66px;
+      color: #8695a3;
+      letter-spacing: .12em;
+      font-weight: 700
+    }
+
+    .vertical-guide {
+      position: absolute;
+      right: 12px;
+      bottom: 59px;
+      font-size: 9px;
+      color: #879aaa;
+      letter-spacing: .12em;
+      text-transform: uppercase
+    }
+
+    .strip {
+      background: var(--navy);
+      color: #fff
+    }
+
+    .strip-in {
+      min-height: 80px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      align-items: center
+    }
+
+    .strip-item {
+      border-right: 1px solid #416289;
+      font-size: 11px;
+      line-height: 1.4;
+      font-weight: 700;
+      letter-spacing: .01em;
+      text-align: center;
+      padding: 8px 18px
+    }
+
+    .strip-item:last-child {
+      border: 0
+    }
+
+    .strip-item small {
+      font-size: 9px;
+      color: #8fb1d6;
+      font-weight: 700;
+      display: block;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+      margin-bottom: 4px
+    }
+
+    .section {
+      padding: 110px 0
+    }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 30px;
+      margin-bottom: 42px
+    }
+
+    .section-head h2 {
+      font-family: 'Inter Display', Inter, sans-serif;
+      max-width: 670px;
+      font-size: 49px;
+      line-height: 1.09;
+      letter-spacing: -.06em;
+      font-weight: 775;
+      margin: 17px 0 0
+    }
+
+    .section-head p {
+      max-width: 280px;
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 13px;
+      margin: 0 0 4px
+    }
+
+    .kicker {
+      font-size: 10px;
+      text-transform: uppercase;
+      color: var(--orange);
+      font-weight: 800;
+      letter-spacing: .18em
+    }
+
+    .programs {
+      background: #fff
+    }
+
+    .program-list {
+      border-top: 1px solid var(--line)
+    }
+
+    .program-item {
+      display: grid;
+      grid-template-columns: 105px 1fr 235px 45px;
+      min-height: 112px;
+      gap: 22px;
+      align-items: center;
+      border-bottom: 1px solid var(--line);
+      transition: background .2s ease;
+      padding: 17px 8px
+    }
+
+    .program-item:hover {
+      background: #f8fbfd
+    }
+
+    .program-no {
+      color: #93a1ad;
+      font-size: 12px;
+      letter-spacing: .12em;
+      font-weight: 700
+    }
+
+    .program-name {
+      font-size: 25px;
+      font-weight: 730;
+      letter-spacing: -.047em
+    }
+
+    .program-tag {
+      font-size: 12px;
+      line-height: 1.6;
+      color: var(--muted)
+    }
+
+    .arrow {
+      font-size: 25px;
+      color: var(--orange);
+      font-weight: 350;
+      text-align: right
+    }
+
+    .about {
+      background: #edf2f6
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 100px;
+      align-items: start
+    }
+
+    .about h2 {
+      font-family: 'Inter Display', Inter, sans-serif;
+      font-size: 50px;
+      line-height: 1.09;
+      letter-spacing: -.06em;
+      margin: 18px 0 24px
+    }
+
+    .about p {
+      font-size: 14px;
+      color: #506478;
+      line-height: 1.85;
+      max-width: 520px
+    }
+
+    .about-small {
+      margin-top: 40px;
+      display: flex;
+      gap: 36px;
+      font-size: 11px;
+      font-weight: 700
+    }
+
+    .about-small span {
+      border-top: 1px solid #a8bacb;
+      padding-top: 14px;
+      flex: 1
+    }
+
+    .about-visual {
+      background: #103f78;
+      padding: 39px;
+      min-height: 310px;
+      color: #fff;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between
+    }
+
+    .about-visual:after {
+      content: "";
+      width: 62px;
+      height: 6px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: var(--orange)
+    }
+
+    .about-visual .mini {
+      font-size: 10px;
+      text-transform: uppercase;
+      color: #9cc0e2;
+      font-weight: 700;
+      letter-spacing: .13em
+    }
+
+    .about-visual strong {
+      font-size: 40px;
+      font-weight: 670;
+      letter-spacing: -.055em;
+      line-height: 1.1
+    }
+
+    .about-visual small {
+      font-size: 12px;
+      line-height: 1.7;
+      color: #abc4df
+    }
+
+    .steps .section-head {
+      margin-bottom: 50px
+    }
+
+    .step-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 35px
+    }
+
+    .step {
+      border-top: 2px solid #bfcdda;
+      padding-top: 20px
+    }
+
+    .step-num {
+      color: var(--orange);
+      font-weight: 800;
+      font-size: 12px
+    }
+
+    .step h3 {
+      margin: 25px 0 12px;
+      font-size: 20px;
+      letter-spacing: -.045em
+    }
+
+    .step p {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.75;
+      margin: 0
+    }
+
+    .step-disclaimer {
+      margin-top: 28px;
+      color: #8493a3;
+      font-size: 11px
+    }
+
+    .cta {
+      background: var(--navy);
+      color: #fff;
+      padding: 92px 0 75px
+    }
+
+    .cta-grid {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 100px;
+      align-items: end
+    }
+
+    .cta .kicker {
+      color: #ff9a76
+    }
+
+    .cta h2 {
+      font-family: 'Inter Display', Inter, sans-serif;
+      font-size: 57px;
+      line-height: 1.08;
+      letter-spacing: -.065em;
+      max-width: 580px;
+      margin: 20px 0 24px
+    }
+
+    .cta p {
+      color: #b2c7da;
+      font-size: 14px;
+      max-width: 420px;
+      line-height: 1.75
+    }
+
+    .contact-card {
+      background: #fff;
+      color: var(--ink);
+      padding: 32px
+    }
+
+    .contact-card>div:first-child {
+      margin-bottom: 21px;
+      color: #6e7e89;
+      font-size: 11px;
+      font-weight: 750;
+      letter-spacing: .12em;
+      text-transform: uppercase
+    }
+
+    .admin {
+      border-top: 1px solid #e5e9ee;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+      padding: 21px 0
+    }
+
+    .admin:last-child {
+      padding-bottom: 0
+    }
+
+    .admin-label {
+      font-size: 10px;
+      color: #7a8b99;
+      margin-bottom: 8px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .1em
+    }
+
+    .admin-number {
+      font-size: 19px;
+      font-weight: 775;
+      letter-spacing: -.04em
+    }
+
+    .wa-circle {
+      display: grid;
+      place-items: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: #edf7ef;
+      color: #25864c;
+      font-size: 19px
+    }
+
+    .footer {
+      background: #08254c;
+      color: #b8c9d9
+    }
+
+    .footer-in {
+      height: 88px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      font-size: 11px
+    }
+
+    .footer-brand {
+      font-size: 16px;
+      font-weight: 800;
+      color: #fff;
+      letter-spacing: -.04em
+    }
+
+    .footer-note {
+      color: #93a9bd
+    }
+
+    @media(max-width:1000px) {
+      .container {
+        padding: 0 30px
+      }
+
+      .nav-links {
+        gap: 19px
+      }
+
+      .nav .nav-cta {
+        padding: 13px
+      }
+
+      .hero-in {
+        grid-template-columns: 56% 44%
+      }
+
+      .hero h1 {
+        font-size: 58px
+      }
+
+      .photo-outer {
+        height: 280px
+      }
+
+      .section-head h2 {
+        font-size: 40px
+      }
+
+      .about-grid {
+        gap: 35px
+      }
+
+      .about-visual strong {
+        font-size: 30px
+      }
+    }
+
+    @media(max-width:700px) {
+      .container {
+        padding: 0 22px
+      }
+
+      .preview-top .container {
+        font-size: 8px
+      }
+
+      .preview-top .extra {
+        display: none
+      }
+
+      .nav {
+        height: 72px
+      }
+
+      .nav-in {
+        gap: 12px
+      }
+
+      .brand {
+        gap: 10px;
+        min-width: 0
+      }
+
+      .brand-mark {
+        width: 41px;
+        font-size: 23px
+      }
+
+      .brand-title {
+        font-size: 12px
+      }
+
+      .brand-sub {
+        font-size: 7px
+      }
+
+      .nav-links,
+      .nav-cta {
+        display: none
+      }
+
+      .mobile-menu-button {
+        display: block
+      }
+
+      .mobile-panel {
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 105px;
+        background: var(--paper);
+        z-index: 20;
+        padding: 16px 22px 24px;
+        box-shadow: 0 20px 30px rgba(10, 30, 60, .13)
+      }
+
+      .mobile-panel.open {
+        display: flex;
+        flex-direction: column;
+        gap: 18px
+      }
+
+      .mobile-panel a {
+        font-size: 13px;
+        font-weight: 700
+      }
+
+      .hero-in {
+        min-height: unset;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch
+      }
+
+      .hero-copy {
+        padding: 65px 0 18px
+      }
+
+      .eyebrow {
+        margin-bottom: 29px;
+        font-size: 9px
+      }
+
+      .eyebrow:before {
+        width: 23px
+      }
+
+      .hero h1 {
+        font-size: clamp(45px, 12vw, 65px);
+        line-height: 1.02;
+        letter-spacing: -.075em;
+        margin-bottom: 25px
+      }
+
+      .hero-desc {
+        font-size: 13px;
+        line-height: 1.85;
+        max-width: 340px;
+        margin-bottom: 28px
+      }
+
+      .hero-buttons {
+        flex-wrap: wrap;
+        gap: 9px
+      }
+
+      .btn-orange,
+      .btn-outline {
+        font-size: 11px;
+        min-height: 45px;
+        padding: 0 14px;
+        gap: 12px
+      }
+
+      .hero-note {
+        margin-top: 32px;
+        font-size: 8px
+      }
+
+      .hero-art {
+        height: 290px;
+        margin: 5px -22px 0;
+        padding-left: 39px;
+        display: block
+      }
+
+      .hero-art:before {
+        width: 88%;
+        height: 75%;
+        right: -50px;
+        top: 23px
+      }
+
+      .photo-outer {
+        width: calc(100% - 59px);
+        height: 218px;
+        margin-top: 22px;
+        margin-left: 0;
+        border: 6px solid #fff
+      }
+
+      .photo-caption {
+        font-size: 8px;
+        padding: 14px
+      }
+
+      .hero-stamp {
+        right: 26px;
+        top: 13px;
+        min-height: 95px;
+        font-size: 8px;
+        padding: 11px 10px
+      }
+
+      .art-index {
+        bottom: 20px;
+        left: 39px;
+        font-size: 10px
+      }
+
+      .vertical-guide {
+        bottom: 19px;
+        font-size: 8px;
+        right: 24px
+      }
+
+      .strip-in {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0
+      }
+
+      .strip-item {
+        min-height: 65px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-bottom: 1px solid #416289;
+        padding: 10px
+      }
+
+      .strip-item:nth-child(2) {
+        border-right: 0
+      }
+
+      .strip-item:nth-child(n+3) {
+        border-bottom: 0
+      }
+
+      .strip-item {
+        font-size: 10px
+      }
+
+      .strip-item small {
+        font-size: 8px
+      }
+
+      .section {
+        padding: 75px 0
+      }
+
+      .section-head {
+        display: block;
+        margin-bottom: 30px
+      }
+
+      .section-head h2 {
+        font-size: 35px;
+        line-height: 1.12;
+        margin: 13px 0 15px
+      }
+
+      .section-head p {
+        font-size: 12px
+      }
+
+      .kicker {
+        font-size: 9px
+      }
+
+      .program-item {
+        grid-template-columns: 30px 1fr 24px;
+        grid-template-rows: auto auto;
+        column-gap: 11px;
+        min-height: 103px;
+        padding: 19px 0
+      }
+
+      .program-no {
+        grid-row: 1 / span 2;
+        align-self: start;
+        margin-top: 4px;
+        font-size: 10px
+      }
+
+      .program-name {
+        font-size: 18px;
+        align-self: end
+      }
+
+      .program-tag {
+        font-size: 11px;
+        grid-column: 2;
+        grid-row: 2;
+        align-self: start
+      }
+
+      .arrow {
+        grid-column: 3;
+        grid-row: 1 / span 2;
+        align-self: center;
+        font-size: 22px
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 29px
+      }
+
+      .about h2 {
+        font-size: 36px;
+        margin: 13px 0 18px
+      }
+
+      .about p {
+        font-size: 12px
+      }
+
+      .about-small {
+        margin-top: 26px;
+        gap: 16px;
+        font-size: 10px
+      }
+
+      .about-visual {
+        min-height: 260px;
+        padding: 25px
+      }
+
+      .about-visual strong {
+        font-size: 31px
+      }
+
+      .steps .section-head {
+        margin-bottom: 33px
+      }
+
+      .step-grid {
+        grid-template-columns: 1fr;
+        gap: 23px
+      }
+
+      .step {
+        padding-top: 14px
+      }
+
+      .step h3 {
+        margin: 10px 0 9px;
+        font-size: 18px
+      }
+
+      .step p {
+        font-size: 12px
+      }
+
+      .step-disclaimer {
+        font-size: 10px
+      }
+
+      .cta {
+        padding: 72px 0 49px
+      }
+
+      .cta-grid {
+        grid-template-columns: 1fr;
+        gap: 26px
+      }
+
+      .cta h2 {
+        font-size: 41px
+      }
+
+      .cta p {
+        font-size: 12px
+      }
+
+      .contact-card {
+        padding: 21px
+      }
+
+      .admin {
+        padding: 19px 0
+      }
+
+      .admin-number {
+        font-size: 17px
+      }
+
+      .footer-in {
+        height: auto;
+        min-height: 102px;
+        flex-direction: column;
+        gap: 8px;
+        justify-content: center;
+        align-items: start
+      }
+
+      .footer-brand {
+        font-size: 14px
+      }
+
+      .footer-note {
+        font-size: 9px
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="preview-top">
+    <div class="container"><span>DESIGN CONCEPT / BUKAN WEBSITE RESMI</span><span class="extra">LPK J.A.T BANJARNEGARA —
+        CONCEPT 01 / EDITORIAL</span></div>
+  </div>
+  <header class="nav">
+    <div class="container nav-in">
+      <a class="brand" href="#beranda" aria-label="Beranda LPK J.A.T"><span class="brand-mark">JAT</span><span>
+          <div class="brand-title">LPK J.A.T BANJARNEGARA</div>
+          <div class="brand-sub">Japanese Training & Career Preparation</div>
+        </span></a>
+      <nav class="nav-links" aria-label="Menu utama"><a href="#beranda">Beranda</a><a href="#program">Program</a><a
+          href="#tentang">Tentang Kami</a><a href="#alur">Alur</a></nav>
+      <a class="nav-cta" href="#kontak">Hubungi Admin ↗</a><button type="button" class="mobile-menu-button"
+        aria-label="Buka menu" aria-controls="mobile-panel" aria-expanded="false" id="menu-btn">☰</button>
+    </div>
+    <nav class="mobile-panel" id="mobile-panel" aria-label="Menu mobile"><a href="#beranda">Beranda</a><a
+        href="#program">Program</a><a href="#tentang">Tentang Kami</a><a href="#alur">Alur</a><a href="#kontak">Kontak
+        Admin</a></nav>
+  </header>
+  <main id="beranda">
+    <section class="hero">
+      <div class="container hero-in">
+        <div class="hero-copy">
+          <div class="eyebrow micro">LPK J.A.T · BANJARNEGARA</div>
+          <h1>LANGKAH<br>BARU MENUJU<br><em>JEPANG.</em></h1>
+          <p class="hero-desc">Pelatihan bahasa Jepang dan pendampingan karier untuk kamu yang ingin mempersiapkan masa
+            depan di Jepang.</p>
+          <div class="hero-buttons"><a class="btn-orange" href="#kontak">Tanya Program <span
+                aria-hidden="true">↗</span></a><a class="btn-outline" href="#program">Lihat Program <span
+                aria-hidden="true">↓</span></a></div>
+          <div class="hero-note">BAHASA · KETERAMPILAN · PERSIAPAN KARIER</div>
+        </div>
+        <div class="hero-art">
+          <div class="hero-stamp">PROGRAM JEPANG</div>
+          <div class="photo-outer"><img src="assets/kelas-jat-preview.jpg"
+              alt="Foto kelas dari listing publik LPK J.A.T, hanya untuk preview internal" />
+            <div class="photo-caption">Foto preview · izin belum diverifikasi</div>
+          </div>
+          <div class="art-index">01 / 04 — BELAJAR & BERTUMBUH</div>
+          <div class="vertical-guide">BANJARNEGARA / INDONESIA</div>
+        </div>
+      </div>
+    </section>
+    <div class="strip">
+      <div class="container strip-in">
+        <div class="strip-item"><small>01 / Program</small>Bahasa Jepang (Gakkou)</div>
+        <div class="strip-item"><small>02 / Program</small>Tokutei Ginou (TG)</div>
+        <div class="strip-item"><small>03 / Program</small>Magang Jepang</div>
+        <div class="strip-item"><small>04 / Program</small>Engineering</div>
+      </div>
+    </div>
+    <section class="section programs" id="program">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="kicker">01 / PROGRAM PELATIHAN</div>
+            <h2>Setiap tujuan punya<br>jalan persiapannya.</h2>
+          </div>
+          <p>Kenali empat jalur program yang diperkenalkan LPK J.A.T. Pilih yang paling sesuai dengan rencanamu.</p>
+        </div>
+        <div class="program-list"><a class="program-item" href="#kontak"><span class="program-no">01</span><span
+              class="program-name">Bahasa Jepang (Gakkou)</span><span class="program-tag">Pelatihan bahasa dan persiapan
+              studi.</span><span class="arrow">↗</span></a><a class="program-item" href="#kontak"><span
+              class="program-no">02</span><span class="program-name">Tokutei Ginou (TG)</span><span
+              class="program-tag">Informasi jalur kerja berketerampilan spesifik.</span><span
+              class="arrow">↗</span></a><a class="program-item" href="#kontak"><span class="program-no">03</span><span
+              class="program-name">Magang Jepang (Ginou Jisshusei)</span><span class="program-tag">Informasi dan
+              pendampingan jalur magang.</span><span class="arrow">↗</span></a><a class="program-item"
+            href="#kontak"><span class="program-no">04</span><span class="program-name">Engineering</span><span
+              class="program-tag">Konsultasi jalur karier di bidang teknik.</span><span class="arrow">↗</span></a></div>
+      </div>
+    </section>
+    <section class="section about" id="tentang">
+      <div class="container about-grid">
+        <div>
+          <div class="kicker">02 / TENTANG LPK J.A.T</div>
+          <h2>Belajar dengan<br>arah yang jelas.</h2>
+          <p>LPK J.A.T Banjarnegara memperkenalkan program pelatihan bahasa Jepang dan pendampingan karier menuju
+            Jepang. Temukan informasi awal tentang pilihan program dan hubungi admin untuk mengetahui proses
+            pendaftarannya.</p>
+          <div class="about-small"><span>BERLOKASI DI<br>BANJARNEGARA</span><span>INFORMASI PROGRAM<br>VIA ADMIN</span>
+          </div>
+        </div>
+        <div class="about-visual">
+          <div class="mini">J.A.T / CORE MESSAGE</div><strong>Persiapan<br>yang baik<br>dimulai dari<br>langkah
+            pertama.</strong><small>Gakkou · Tokutei Ginou · Ginou Jisshusei · Engineering</small>
+        </div>
+      </div>
+    </section>
+    <section class="section steps" id="alur">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="kicker">03 / MULAI DARI SINI</div>
+            <h2>Mudah memulai.<br>Jelas langkahnya.</h2>
+          </div>
+          <p>Tertarik ikut program? Awali dengan menghubungi admin dan cari tahu informasi yang relevan dengan tujuanmu.
+          </p>
+        </div>
+        <div class="step-grid">
+          <div class="step"><span class="step-num">STEP / 01</span>
+            <h3>Konsultasi program</h3>
+            <p>Hubungi admin untuk mendiskusikan tujuan belajar atau rencana berkarier di Jepang.</p>
+          </div>
+          <div class="step"><span class="step-num">STEP / 02</span>
+            <h3>Tanyakan persyaratan</h3>
+            <p>Dapatkan informasi pendaftaran, dokumen, jadwal, dan detail program yang tersedia.</p>
+          </div>
+          <div class="step"><span class="step-num">STEP / 03</span>
+            <h3>Siapkan langkahmu</h3>
+            <p>Pilih program sesuai informasi dan arahan yang diberikan pihak LPK.</p>
+          </div>
+        </div>
+        <div class="step-disclaimer">* Ini adalah ilustrasi alur konsultasi, bukan prosedur resmi yang sudah
+          diverifikasi.</div>
+      </div>
+    </section>
+    <section class="cta" id="kontak">
+      <div class="container cta-grid">
+        <div>
+          <div class="kicker">04 / HUBUNGI KAMI</div>
+          <h2>Perjalanan besar<br>dimulai dari<br><span style="color:#ff9b71">satu pertanyaan.</span></h2>
+          <p>Tertarik belajar bahasa Jepang atau mengenal jalur karier ke Jepang? Hubungi admin LPK J.A.T Banjarnegara
+            untuk informasi pendaftaran.</p>
+        </div>
+        <div class="contact-card">
+          <div>INFORMASI PENDAFTARAN / WHATSAPP</div><a class="admin" href="https://wa.me/6285743347760" target="_blank"
+            rel="noopener noreferrer"><span>
+              <div class="admin-label">Admin 01</div>
+              <div class="admin-number">0857 4334 7760</div>
+            </span><span class="wa-circle">↗</span></a>
+          <div class="admin"><span>
+              <div class="admin-label">Admin 02 · perlu konfirmasi</div>
+              <div class="admin-number">0821 4394 492</div>
+            </span><span style="font-size:10px;color:#627188">Nomor belum diverifikasi</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer-in">
+      <div class="footer-brand">JAT<span style="color:#f06b36">.</span> <span style="font-size:12px;font-weight:700">LPK
+          J.A.T BANJARNEGARA</span></div>
+      <div class="footer-note">Konsep desain tidak resmi · Materi perlu persetujuan pihak LPK sebelum publikasi</div>
+    </div>
+  </footer>
+  <script>const m = document.getElementById('menu-btn'), p = document.getElementById('mobile-panel'); m.addEventListener('click', () => { p.classList.toggle('open'); m.setAttribute('aria-expanded', String(p.classList.contains('open'))) }); p.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { p.classList.remove('open'); m.setAttribute('aria-expanded', 'false') }));</script>
+</body>
+
+</html>
